@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    position: relative;
+    background-image: url("Images/pexels-david-bartus-1166209.jpg");
+    color:#fff;
+    background-attachment:fixed;
+    background-size: cover; 
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+ul{
+    list-style: none;
+}
+/* styl for main-header */
+.main-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100px;
+    z-index:3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 50px;
+}
+/* A class added for the navbar with a background color */
+.main-header.navbar-bg {
+    background-color: black;
+}
+
+/* logo */
+.logo{
+    width:300px;
+    height:auto;
+}
+.logo img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+/* style for main-desktop-header */
+.desktop-main-menu{
+    margin-right:70px;
+  }
+  .desktop-main-menu ul{
+    display:flex;
+  }
+  .desktop-main-menu ul li{
+    position:relative;
+    margin-right:20px;
+    padding-bottom:2px;
+  }
+/* stylr for bar below navbar */
+.desktop-main-menu ul li a::after {
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform:scalex(0);
+    transition:transform 0.6s;
+    transform-origin:right center;
+  }
+  .desktop-main-menu ul li a:hover::after{
+    transform:scalex(1);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin:left center;
+  }
+/* section */
+section{
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding:0;
+    margin:0;
+}
+/* section-a */
+.section-a{
+    background-color:transparent;
+}
+.section-a-inner{
+    display:flex;
+    justify-content:space-between;
+}
+/* style for text data */
+.section-a-inner-01-a{
+    position: absolute;
+    top: 65%;
+    left:23%;
+}
+.section-a-inner-01-a h4{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.section-a-inner-01-b{
+    position: absolute;
+    top:70%;
+    left:25%;
+}
+.section-a-inner-01-b h1{
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+}
+/* style for image */
+.section-a-inner-02 img{
+    position: absolute;
+    top:270px;
+    right:10%;
+}
+/* style for the circular image */
+.section-a-inner-02-Image{
+    border-radius: 50%;
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
+}
+/* Animation for the image */
+.section-a-inner-02 img:hover{
+    transform: rotateZ(1440deg);
+    transform-origin:top top;
+    transition-duratioN: 2s;
+}
+/* style for white bar below the 1st section */
+.section-a::after{
+    content: '';
+    position:absolute;
+    top:575px;
+    left: 0;
+    width: 100%;
+    height:3px;
+    background: #fff;
+}
+/* sction-b */
+.section-b{
+    background-image: url("#");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/*style for main civ */
+.section-b-inner-main{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* style for text div box */
+.section-b-inner-01{
+    position:relative;
+    top:0;
+    width:800px;
+    height:100%;
+}
+/* style for text */
+.section-b-inner-01-text{
+    position:relative;
+    padding: 25px;
+    top: 25px;
+    font-size: 25px;
+    line-height: 2;
+}
+/* style for image div box */
+.section-b-inner-02{
+    position:relative;
+    top:0;
+    width:500px;
+    height:100%;
+}
+/* style for Circular Image */
+.section-b-inner-02-Image{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width:420px;
+    height:420px;
+    object-fit: cover;
+    position: absolute;
+    top:150px;
+    left:45px;
+}
+/* Anmation for the picture */
+.section-b-inner-02 img:hover{
+    transform: rotateY(1440deg);
+    transform-origin:top top;
+    transition-duration: 4s;
+}
+/* Style for overlay after animation */
+.image-overlay-01{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 4s ease;
+    animation: slideIn 0.4s forwards 1s; /* Starts after 4 seconds and maintains final state */
+}
+.section-b-inner-02:hover .image-overlay-01{
+    opacity:2;
+}
+.image-overlay-01 a{
+    font-size: 50px;
+    font-display: bold;
+}
+/* will be removed later */
+.section-b::after{
+    content: '';
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height:3px;
+    background: #fff;
+}
+/* section-c */
+.section-c{
+    background-image: url("#");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/* will be removed later */
+.section-c::after{
+    content: '';
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height:3px;
+    background: #fff;
+} 
+/* style for "My Projects" div box */
+.section-c-inner-01{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:150px;
+}
+/* style for "My Projects" Writing */
+.section-c-inner-01 p{
+    position: absolute;
+    top:20px;
+    left:43%;
+    font-size: 45px;
+}
+/* style for "My projects-pictures" div box */
+.section-c-inner-02{
+    position: absolute;
+    top:200px;
+    width:100%;
+    height:fit-content;
+    display:flex;
+    justify-content: space-around;
+}
+/* style for circular images in the div box */
+.Section-c-inner-02-images{
+    border-radius: 50%;
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+}
+/* Animation for Images */
+.section-c-inner-02 img:hover{
+    transform: scale(1.4);
+}
+/* style for "button" div box */
+.section-c-inner-03{
+    position:absolute;
+    bottom:70px;
+    width:100%;
+    height:fit-content;
+}
+/* style for 'button' */
+.btn-01{
+    position: absolute;
+    top:0;
+    left:37%;
+    width:400px;
+    height:40px;
+    display: inline-block;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    overflow:hidden;
+    z-index: 2;
+}
+/* style for 'hover' div */
+.btn-01 .hover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    color:#000;
+    z-index:-1;
+    transform:translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* style for 'button' upon hover */
+.btn-01:hover .hover{
+    transform: translateY(0);
+}
+/* style for text on 'button' */
+.btn-01 span{
+    font-size: 25px;
+    color: #fff;
+}
+/* style for text on 'button' upon hover */
+.btn-01:hover span{
+    color:#000;
+}
+/* style for footer */
+.footer{
+    background-image: url("");
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/* style for footer */
+.footer-inner{
+   position: relative;
+   display:flex;
+   justify-content:center;
+}
+/* 1st flex box */
+.footer-inner-01{
+    position: relative;
+    top:200px;
+    width:auto;
+    height:auto;
+}
+/* style for Image */
+.footer-inner-01-Image{
+    border-radius: 30px;
+    width:500px;
+    height:600px;
+    cursor:pointer;
+}
+/* Animation for the Image */
+.footer-inner-01-Image:hover{
+    transform: scale(0.7);
+}
+/* 2nd Flex box */
+.footer-inner-02{
+   position:relative;
+   top:350px;
+   width:30%;
+   height:fit-content;
+}
+/* contacs */
+.footer-inner-02-a{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:fit-content;
+}
+.footer-inner-02-a h1{
+    text-align: center;
+}
+/* 1st flex box of contacs */
+.footer-inner-02-b{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+}
+/* style to determine size of the icons */
+.footer-inner-02-b-circulr-image{
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+    padding-left:5px;
+}
+/* follow me */
+.footer-inner-02-c{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:fit-content;
+}
+.footer-inner-02-c p{
+    text-align:center;
+}
+/* 2nd flex box for follow me */
+.footer-inner-02-d{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:fit-content;
+    display:flex;
+    justify-content:center;
+}
+/* style to determine size of the icons */
+.footer-inner-02-d-circulr-image{
+    border-radius: 50%;
+    width: 45px; 
+    height: 45px;
+    object-fit: cover;
+    padding-left: 5px;
+    cursor:pointer;
+}
+/* my email id */
+.footer-inner-02-e{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:fit-content;
+}
+.footer-inner-02-e p{
+    text-align: center;
+}
+/* style for animation upon hovoring upon social media links */
+.social-media-hovering-magic{ /* style for main <a> anchor link */
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    z-index:2;
+    cursor: pointer;
+}
+.social-media-hovering-magic .Hovering-magic{ /* style for div, which will come upon during hovaring */
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#f2efac;
+    border-radius: 7px;
+    color:#000;
+    z-index:-1;
+    transform:translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.social-media-hovering-magic:hover .Hovering-magic{ /* style for both during hovaring */
+    transform: translateY(0);
+}
