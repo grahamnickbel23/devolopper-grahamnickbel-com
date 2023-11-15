@@ -448,30 +448,45 @@ section{
     display: inline-block;
 }
 /* style for "input" of the form */
-.footer-inner-02-e  input{
+.input-bar{
     width: 350px;
     height: 50px;
     border-radius: 25px;
 }
 /* style for hovaring over the form box */
-.footer-inner-02-e input:hover{
+.input-bar:hover{
     background-color:rgb(207, 236, 233);
 }
 /* cool animation */
 .footer-inner-02-e:hover ~ .footer-inner-01 {
-    transform: scale(0.7);/* still experimental , will compleat this code, when we will become sucessful doing it */
+    transform: scale(0.7);
 }
 /* style for the 'text of placeholder" in form */
-.footer-inner-02-e input::placeholder{
+.input-bar::placeholder{
     font-size: 20px;
     text-align: center;
 }
 /* style for the "text" that user will put */
-.footer-inner-02-e input[type="email"]{
+.input-bar[type="email"]{
     font-size: 18px; /* Adjust the size as needed */
     padding: 8px; /* Adjust padding for better visual appearance */
     box-sizing: border-box; /* Include padding and border in the total width and height */
     text-align: center;
+}
+/*style for 'submit' button in form */
+.input-btn{
+    width:75px;
+    height:35px;
+    border-radius: 25px;
+    background-color: rgb(228, 76, 76);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+/* style for hovaring on 'submit' button */
+.input-btn:hover{
+    background-color: orangered;
+    transform: scaleX(1.2);
 }
 /* style for animation upon hovoring upon social media links */
 .social-media-hovering-magic{ /* style for main <a> anchor link */
