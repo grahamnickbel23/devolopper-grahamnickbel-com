@@ -108,7 +108,7 @@ ul{
 }
 /* style for main-desktop-header */
 .desktop-main-menu{
-    margin-right:100px;
+    margin-right:170px;
   }
   .desktop-main-menu ul{
     display:flex;
@@ -137,6 +137,13 @@ ul{
     transform-origin:left center;
   }
  /* style for dropdown menu */
+.google{
+    position: fixed;
+    top:6.5%;
+    right:75px;
+    z-index: 3;
+    cursor: pointer;
+  }
   .log-in{
     border:2px solid #fff;
     border-radius: 50%;
@@ -161,7 +168,7 @@ ul{
     width:80px;
   }
   /* Style to show dropdown on hover */
-  .desktop-main-menu:hover .dropdown {
+  .google:hover .dropdown {
     display: block;
 }
 /* style for content inside dropdown menu */
