@@ -108,7 +108,7 @@ ul{
 }
 /* style for main-desktop-header */
 .desktop-main-menu{
-    margin-right:70px;
+    margin-right:100px;
   }
   .desktop-main-menu ul{
     display:flex;
@@ -136,6 +136,39 @@ ul{
     transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     transform-origin:left center;
   }
+ /* style for dropdown menu */
+  .log-in{
+    border:2px solid #fff;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+  }
+ .dropdown{
+    position: absolute;
+    display:none;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+  /* style for links in the dropdown menu */
+  .dropdown a{
+    color:#000;
+    padding: 12px 16px;
+    border:1px solid #000;
+    display: block;
+    position: relative;
+    width:80px;
+  }
+  /* Style to show dropdown on hover */
+  .desktop-main-menu:hover .dropdown {
+    display: block;
+}
+/* style for content inside dropdown menu */
+.option:hover{
+    background-color: rgb(188, 202, 202);
+    color: #fff;
+}
 /* section */
 section{
     position: relative;
