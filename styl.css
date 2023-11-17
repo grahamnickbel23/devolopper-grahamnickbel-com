@@ -221,6 +221,18 @@ section{
     padding: 5px;
 }
 /* Animation for the image */
+.section-a-inner-02-animation{
+    position: absolute;
+    top:250px;
+    right:8.5%;
+    border:10px solid #000;
+    border-top:10px solid #fff;
+    border-radius: 50%;
+    width:300px;
+    height:300px;
+    margin: 15px;
+    animation: spin 1s linear infinite;
+}
 .section-a-inner-02 img:hover{
     transform: rotateZ(1440deg);
     transform-origin:top top;
