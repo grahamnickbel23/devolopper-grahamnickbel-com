@@ -225,7 +225,7 @@ section{
     position: absolute;
     top:243px;
     right:8.5%;
-    border:10px solid #000;
+    border:10px solid transparent;
     border-top:10px solid #fff;
     border-radius: 50%;
     width:300px;
