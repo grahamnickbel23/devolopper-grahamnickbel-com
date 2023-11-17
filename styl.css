@@ -209,7 +209,7 @@ section{
 /* style for image */
 .section-a-inner-02 img{
     position: absolute;
-    top:270px;
+    top:263px;
     right:10%;
 }
 /* style for the circular image */
@@ -223,7 +223,7 @@ section{
 /* Animation for the image */
 .section-a-inner-02-animation{
     position: absolute;
-    top:250px;
+    top:243px;
     right:8.5%;
     border:10px solid #000;
     border-top:10px solid #fff;
