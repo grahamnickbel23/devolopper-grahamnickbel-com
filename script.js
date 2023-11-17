@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', function () {
         // Check the scroll position
-        if (window.scrollY > 1000) { // Adjust the scroll position as needed
+        if (window.scrollY > 500) { // Adjust the scroll position as needed
             navbar.style.backgroundColor = '#000'; // Change to the desired color
         } else {
             navbar.style.backgroundColor = 'transparent'; // Reset to the initial color
