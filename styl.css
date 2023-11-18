@@ -279,12 +279,21 @@ section{
     top:0;
     width:800px;
     height:100%;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
 }
 /* style for text */
-.section-b-inner-01-text{
+.section-b-inner-01-text-a{
     position:relative;
-    padding: 25px;
-    top: 25px;
+    top: 65px;
+    left:33%;
+    font-size: 25px;
+    line-height: 2;
+}
+.section-b-inner-01-text-b{
+    position:relative;
+    top: 100px;
+    text-align: center;
     font-size: 25px;
     line-height: 2;
 }
@@ -329,16 +338,6 @@ section{
     font-size: 50px;
     font-display: bold;
 }
-/* will be removed later */
-.section-b::after{
-    content: '';
-    position:absolute;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    height:3px;
-    background: #fff;
-}
 /* section-c */
 .section-c{
     background-image: url("#");
@@ -346,16 +345,6 @@ section{
     background-repeat:no-repeat;
     background-size: cover;
 }
-/* will be removed later */
-.section-c::after{
-    content: '';
-    position:absolute;
-    bottom:0;
-    left: 0;
-    width: 100%;
-    height:3px;
-    background: #fff;
-} 
 /* style for "My Projects" div box */
 .section-c-inner-01{
     position: absolute;
@@ -379,6 +368,8 @@ section{
     height:fit-content;
     display:flex;
     justify-content: space-around;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
 }
 /* style for circular images in the div box */
 .Section-c-inner-02-images{
