@@ -369,7 +369,7 @@ section{
     display:flex;
     justify-content: space-around;
     border-radius: 50px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(5px);
 }
 /* style for circular images in the div box */
 .Section-c-inner-02-images{
