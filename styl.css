@@ -27,7 +27,7 @@ a{
 ul{
     list-style: none;
 }
-* style for splash screen */
+/* style for splash screen */
 #splash-screen{
     position: fixed;
     top:0;
